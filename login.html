@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Page</title>
+    <!-- CSS File ko link kiya -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        
+        <!-- Error Message dikhane ke liye div -->
+        <div id="error-message" class="error-msg"></div>
+
+        <form id="loginForm" action="/submit-login" method="POST">
+            <!-- Username Input -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username">
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="login-btn">Sign In</button>
+        </form>
+    </div>
+
+    <!-- JavaScript File ko link kiya -->
+    <script src="script.js"></script>
+</body>
+</html>
+
